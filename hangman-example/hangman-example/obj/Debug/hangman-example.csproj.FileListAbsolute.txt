@@ -8,3 +8,4 @@ C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\han
 C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.csproj.CoreCompileInputs.cache
 C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.exe
 C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.pdb
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman_example.Log.resources

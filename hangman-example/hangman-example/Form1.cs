@@ -16,6 +16,9 @@ namespace hangman_example
         {
             InitializeComponent();
             
+            l.Show();
+            l.Visible = false;
+
         }
 
         public Log l = new Log();
@@ -29,14 +32,13 @@ namespace hangman_example
             {
 
                 case true:
-                    l.Close();
+                    l.Visible = false;
                     log = false;
-
                     break;
 
 
                 case false:
-                    l.Show();
+                    l.Visible = true;
                     log = true;
                     break;
             }
