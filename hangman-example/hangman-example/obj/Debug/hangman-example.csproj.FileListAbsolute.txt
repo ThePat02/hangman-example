@@ -1,0 +1,10 @@
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\bin\Debug\hangman-example.exe.config
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\bin\Debug\hangman-example.exe
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\bin\Debug\hangman-example.pdb
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.csprojResolveAssemblyReference.cache
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman_example.Form1.resources
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman_example.Properties.Resources.resources
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.csproj.GenerateResource.Cache
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.csproj.CoreCompileInputs.cache
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.exe
+C:\xamppnew\htdocs\hangman-example\hangman-example\hangman-example\obj\Debug\hangman-example.pdb
