@@ -36,6 +36,9 @@
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadNewCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.m_btn_start = new System.Windows.Forms.Button();
+            this.m_text_hangman = new System.Windows.Forms.Label();
+            this.m_box = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.m_picturebox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -92,11 +95,46 @@
             this.showLogToolStripMenuItem.Text = "Toggle log";
             this.showLogToolStripMenuItem.Click += new System.EventHandler(this.showLogToolStripMenuItem_Click);
             // 
+            // m_btn_start
+            // 
+            this.m_btn_start.Location = new System.Drawing.Point(416, 274);
+            this.m_btn_start.Name = "m_btn_start";
+            this.m_btn_start.Size = new System.Drawing.Size(395, 86);
+            this.m_btn_start.TabIndex = 3;
+            this.m_btn_start.Text = "Start game";
+            this.m_btn_start.UseVisualStyleBackColor = true;
+            this.m_btn_start.Click += new System.EventHandler(this.m_btn_start_Click);
+            // 
+            // m_text_hangman
+            // 
+            this.m_text_hangman.AutoSize = true;
+            this.m_text_hangman.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_text_hangman.Location = new System.Drawing.Point(12, 363);
+            this.m_text_hangman.Name = "m_text_hangman";
+            this.m_text_hangman.Size = new System.Drawing.Size(311, 73);
+            this.m_text_hangman.TabIndex = 4;
+            this.m_text_hangman.Text = "Hangman";
+            // 
+            // m_box
+            // 
+            this.m_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.m_box.Enabled = false;
+            this.m_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_box.Location = new System.Drawing.Point(673, 188);
+            this.m_box.Name = "m_box";
+            this.m_box.Size = new System.Drawing.Size(138, 80);
+            this.m_box.TabIndex = 6;
+            this.m_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.m_box.TextChanged += new System.EventHandler(this.m_box_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 556);
+            this.Controls.Add(this.m_box);
+            this.Controls.Add(this.m_text_hangman);
+            this.Controls.Add(this.m_btn_start);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.m_picturebox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -123,6 +161,9 @@
         private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadNewCSVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showLogToolStripMenuItem;
+        private System.Windows.Forms.Button m_btn_start;
+        private System.Windows.Forms.Label m_text_hangman;
+        private System.Windows.Forms.TextBox m_box;
     }
 }
 

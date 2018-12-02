@@ -17,6 +17,11 @@ namespace hangman_example
             InitializeComponent();
         }
 
+        public string LogText
+        {
+            set { m_logbox.AppendText(Environment.NewLine + value); }
+        }
+
         private const int CP_NOCLOSE_BUTTON = 0x200;
         protected override CreateParams CreateParams
         {
@@ -26,6 +31,11 @@ namespace hangman_example
                 myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
                 return myCp;
             }
+        }
+
+        public void logText(string msg)
+        {
+            m_logbox.AppendText(Environment.NewLine + msg);
         }
 
         private void Log_Load(object sender, EventArgs e)

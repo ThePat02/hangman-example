@@ -38,6 +38,7 @@
             this.m_logbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.m_logbox.Location = new System.Drawing.Point(12, 12);
             this.m_logbox.Name = "m_logbox";
+            this.m_logbox.ReadOnly = true;
             this.m_logbox.Size = new System.Drawing.Size(413, 329);
             this.m_logbox.TabIndex = 0;
             this.m_logbox.Text = "";
@@ -56,6 +57,7 @@
             this.Name = "Log";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Text = "Log";
             this.Load += new System.EventHandler(this.Log_Load);
             this.ResumeLayout(false);
 
