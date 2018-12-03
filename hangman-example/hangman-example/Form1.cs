@@ -68,7 +68,30 @@ namespace hangman_example
 
             for (int i = 0; i < length; i++)
             {
-                a = a + "?";afsddfafdssdf
+                a = a + "?";
+            }
+
+            return a;
+        }
+
+        private string refreshWord(string letter)
+        {
+            string a = "";
+
+
+
+            for (int i = 0; i < m_length; i++)
+            {
+                string l = m_word.Substring(i, 1);
+                string isquestion = m_text_hangman.Text;
+                isquestion = isquestion.Substring(i, 1);
+
+                if (isquestion == "?")
+                {
+                    if (l == letter) a = a + letter;
+                    else a = a + "?";
+                }
+                else a = a + l;
             }
 
             return a;
@@ -85,6 +108,7 @@ namespace hangman_example
             l.LogText = "Data: " + m_word + " | " + m_desc;
             l.LogText = "";
 
+            m_btn_start.Text = "New word";
             m_btn_start.Enabled = false;
 
             m_text_hangman.Text = getLength();
@@ -160,13 +184,29 @@ namespace hangman_example
 
         }
 
+        private void restart()
+        {
+            m_btn_start.Enabled = true;
+            health = 10;
+
+            updateMan();
+        }
+
+        private void gameOver()
+        {
+            MessageBox.Show("You are literally dead...");
+            restart();
+        }
+
         private void m_box_TextChanged(object sender, EventArgs e)
         {
-            if (m_box.Text != null && m_box.Text != " ")
+            if (m_box.Text != null && m_box.Text != " " && m_box.Text != "")
             {
                 m_box.Enabled = false;
                 l.LogText = "Detected input";
                 l.LogText = "";
+
+                m_box.CharacterCasing = CharacterCasing.Upper;
 
                 string input = m_box.Text;
 
@@ -177,6 +217,8 @@ namespace hangman_example
                     l.LogText = "Letter is in the word";
 
                     int pos = m_word.IndexOf(input);
+
+                    m_text_hangman.Text = refreshWord(input);
                 }
                 else
                 {
@@ -184,11 +226,30 @@ namespace hangman_example
 
                     health = health - 1;
                     l.LogText = "Health - 1 = " + health;
+
+
                 }
 
                 updateMan();
 
                 l.LogText = "";
+
+                m_box.Text = "";
+
+                bool finished = Regex.IsMatch(m_text_hangman.Text, "[?]");
+
+                if (finished == false)
+                {
+                    restart();
+                }
+                else
+                {
+                    if (health == 0)
+                    {
+                        gameOver();
+                    }
+                    else m_box.Enabled = true;
+                }
             }
         }
     }
