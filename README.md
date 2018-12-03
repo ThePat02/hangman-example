@@ -1,4 +1,7 @@
 # hangman-example
+
+`Note: Not completely commented and ugly/useless code lines`
+
 Language: C#
 
 Author: Patrick Parz
