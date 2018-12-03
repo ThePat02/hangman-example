@@ -1,6 +1,8 @@
 # hangman-example
 Language: C#
+
 Author: Patrick Parz
+
 Comments in german
 
 ## Features
